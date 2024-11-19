@@ -42,3 +42,12 @@ Thumbs.db
 .nx/workspace-data
 
 .angular
+
+# Yarn
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions

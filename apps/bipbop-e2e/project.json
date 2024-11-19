@@ -1,0 +1,9 @@
+{
+  "name": "bipbop-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/bipbop-e2e/src",
+  "implicitDependencies": ["bipbop"],
+  "// targets": "to see all targets run: nx show project bipbop-e2e --web",
+  "targets": {}
+}

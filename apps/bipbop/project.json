@@ -8,16 +8,12 @@
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:application",
-      "outputs": [
-        "{options.outputPath}"
-      ],
+      "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/apps/bipbop",
         "index": "apps/bipbop/src/index.html",
         "browser": "apps/bipbop/src/main.ts",
-        "polyfills": [
-          "zone.js"
-        ],
+        "polyfills": ["zone.js"],
         "tsConfig": "apps/bipbop/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": [
@@ -79,9 +75,7 @@
     },
     "test": {
       "executor": "@nx/jest:jest",
-      "outputs": [
-        "{workspaceRoot}/coverage/{projectRoot}"
-      ],
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
         "jestConfig": "apps/bipbop/jest.config.ts"
       }
@@ -93,6 +87,13 @@
         "port": 4200,
         "staticFilePath": "dist/apps/bipbop/browser",
         "spa": true
+      }
+    },
+    "deploy": {
+      "executor": "angular-cli-ghpages:deploy",
+      "options": {
+        "baseHref": "https://cguilhermef.github.io/bipbop/",
+        "repo": "https://github.com/cguilhermef/bipbop.git"
       }
     }
   }

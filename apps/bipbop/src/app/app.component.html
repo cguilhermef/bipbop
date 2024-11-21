@@ -1,2 +1,19 @@
-<h1 class="teste">Bibbop</h1>
-<router-outlet></router-outlet>
+<mat-sidenav-container class="container">
+  <mat-sidenav mode="side" opened class="container__aside">
+    <img src="bipbop.png" alt="Bipbop!" class="logo" />
+    <p class="mat-label-medium list-title">Opções</p>
+    <mat-nav-list>
+      <mat-list-item
+        routerLinkActive
+        #rla="routerLinkActive"
+        [activated]="rla.isActive"
+      >
+        <a routerLink="/" matListItemTitle>Início</a>
+        <mat-icon matListItemIcon fontIcon="home"></mat-icon>
+      </mat-list-item>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content class="container__main">
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

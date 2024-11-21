@@ -1,3 +1,22 @@
 .teste {
   font: var(--mat-sys-display-large);
 }
+.container {
+  inset: 0;
+  position: absolute;
+}
+.container__aside {
+  padding: 0 8px;
+  width: 200px;
+}
+.container__main {
+  padding: 0 8px;
+}
+.logo {
+  display: block;
+  margin: 16px auto 32px;
+}
+
+.list-title {
+  margin: 32px 0 8px 8px;
+}

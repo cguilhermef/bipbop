@@ -16,7 +16,7 @@ $app-theme: mat.define-theme(
       regular-weight: 300,
     ),
     density: (
-      scale: -5,
+      scale: -3,
     ),
   )
 );
@@ -24,7 +24,12 @@ $app-theme: mat.define-theme(
 html {
   @include mat.core-theme($app-theme);
   @include mat.core-typography($app-theme);
+  @include mat.list-theme($app-theme);
+  --mat-list-active-indicator-shape: 6px;
 }
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+mat-list-item a {
+  text-decoration: none;
+}

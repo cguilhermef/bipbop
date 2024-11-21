@@ -22,7 +22,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@angular-devkit/architect@npm:0.1802.12":
+"@angular-devkit/architect@npm:0.1802.12, @angular-devkit/architect@npm:^0.1802.12":
   version: 0.1802.12
   resolution: "@angular-devkit/architect@npm:0.1802.12"
   dependencies:
@@ -2188,6 +2188,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@bipbop/source@workspace:."
   dependencies:
+    "@angular-devkit/architect": "npm:^0.1802.12"
     "@angular-devkit/build-angular": "npm:~18.2.0"
     "@angular-devkit/core": "npm:~18.2.0"
     "@angular-devkit/schematics": "npm:~18.2.0"
